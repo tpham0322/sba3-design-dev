@@ -1,0 +1,295 @@
+/* ------------------------------
+Global Styles
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background: hsl(270, 20%, 96%);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ------------------------------
+Background Shapes
+------------------------------ */
+
+.bg-left {
+    position: fixed;
+    width: 420px;
+    height: 90vh;
+    top: 0;
+    left: -140px;
+
+    background: linear-gradient(
+        hsl(293, 100%, 63%),
+        hsl(264, 100%, 61%)
+    );
+
+    border-bottom-left-radius: 220px;
+    border-bottom-right-radius: 220px;
+    z-index: -2;
+}
+
+.bg-right {
+    position: fixed;
+    width: 420px;
+    height: 90vh;
+    right: -180px;
+    bottom: 0;
+
+    background: #f5f3f8;
+
+    border-top-left-radius: 220px;
+    border-top-right-radius: 220px;
+
+    z-index: -2;
+}
+
+/* ------------------------------
+Phone Card
+------------------------------ */
+
+.phone {
+    width: 320px;
+    border-radius: 32px;
+    overflow: hidden;
+    background: white;
+}
+
+/* White notch */
+
+.phone-notch {
+    width: 160px;
+    height: 28px;
+
+    background: white;
+
+    margin: auto;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* ------------------------------
+Header
+------------------------------ */
+
+.phone-header {
+    background: linear-gradient(
+        to right,
+        hsl(293, 100%, 63%),
+        hsl(264, 100%, 61%)
+    );
+
+    padding: 18px 18px 14px;
+}
+
+.phone-header small {
+    color: hsl(276, 100%, 81%);
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.back-arrow {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* ------------------------------
+Chat Area
+------------------------------ */
+
+.chat {
+    background: hsl(270, 20%, 96%);
+}
+
+.message {
+    max-width: 72%;
+    padding: 10px 12px;
+    border-radius: 14px;
+    font-size: .75rem;
+    line-height: 1.5;
+}
+
+/* Left messages */
+
+.left {
+    background: #efe5f7;
+    color: hsl(276, 55%, 52%);
+    border-bottom-left-radius: 6px;
+}
+
+/* Right messages */
+
+.right {
+    background: white;
+    color: hsl(270, 7%, 64%);
+    border-bottom-right-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+.small-right {
+    width: fit-content;
+}
+
+/* ------------------------------
+Dog Images
+------------------------------ */
+
+.dog-img {
+    width: 52px;
+    border-radius: 12px;
+}
+
+/* ------------------------------
+Pricing
+------------------------------ */
+
+.price-option {
+
+    width: 80%;
+
+    padding: 12px 15px;
+
+    border-radius: 14px;
+
+    color: white;
+
+    background: linear-gradient(
+        to right,
+        hsl(293,100%,63%),
+        hsl(264,100%,61%)
+    );
+}
+
+.price-option span {
+    font-size: .75rem;
+}
+
+.price-option strong {
+    font-size: 1rem;
+}
+
+.radio {
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    border: 2px solid hsl(289,100%,72%);
+}
+
+/* ------------------------------
+Input
+------------------------------ */
+
+.input-group {
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.form-control {
+    font-size: .85rem;
+    padding: 14px 18px;
+    box-shadow: none !important;
+}
+
+.form-control::placeholder {
+    color: hsl(206,6%,79%);
+}
+
+.send-btn {
+
+    width: 44px;
+    background: hsl(271,36%,24%);
+    color: white;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 1.3rem;
+}
+
+.send-btn:hover {
+    background: hsl(271,36%,18%);
+    color: white;
+}
+
+/* ------------------------------
+Text Section
+------------------------------ */
+
+h1 {
+    color: hsl(271,36%,24%);
+}
+
+.description {
+    color: hsl(270,7%,64%);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* ------------------------------
+Footer
+------------------------------ */
+
+footer {
+    font-size: .75rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* ------------------------------
+Responsive
+------------------------------ */
+
+@media (max-width: 992px) {
+
+    body {
+        text-align: center;
+    }
+
+    .description {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .bg-left {
+        left: -260px;
+    }
+
+    .bg-right {
+        right: -260px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .phone {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: .95rem;
+    }
+}
+
