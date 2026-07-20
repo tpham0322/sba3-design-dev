@@ -67,3 +67,12 @@ chat-app-css-illustration/
 ## Acknowledgements
 
 Challenge provided by **Frontend Mentor**.
+
+## Reflection
+
+During this project, one of the biggest challenges I encountered was recreating the Frontend Mentor design while incorporating Bootstrap. Although Bootstrap made it easier to build a responsive layout, many of the elements such as the chat bubbles and the phone mockup required custom CSS to closely match the original design.
+
+To solve these challenges, I first built the overall page structure using Bootstrap's grid system and utility classes. After the layout was complete, I used custom CSS to style the unique interface elements and media queries to improve responsiveness. Breaking the project into smaller "boxes" made it easier to troubleshoot and refine each component.
+
+If I had more time, I would improve the design by making it even more pixel-perfect, adding subtle animations for the chat interface, and further enhancing accessibility with additional ARIA attributes and keyboard navigation support.
+
